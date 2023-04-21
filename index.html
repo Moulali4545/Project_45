@@ -1,0 +1,165 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/outer.css' %}"> 
+    <script src="https://kit.fontawesome.com/c60b4e0066.js" crossorigin="anonymous"></script>
+</head>
+  <body background="{% static 'images/www-sphereinc-com-wp-content-uploads-2021-07-Python-and-machine-learning-blog-header-webp.jpg ' width='50%' height='50%' %}" class="bg" style="background-repeat: no-repeat;">
+    {% block content %}
+    <div class="bg">
+    <nav class="navbar navbar-expand-lg  navbar-light bg-light ">
+        <a class="navbar-brand" > <img src="{% static 'images/logo.jpg' %}" height="70px" width="100px" class="image-1"/> <span class="py">Pyt  <span class="th" style="color:orange;">hon</span></span></a>
+        <button class="navbar-toggler botn mr-3 " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              
+            </li>
+            <li class="nav-item">
+              <a  href="#"><!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary botn" data-toggle="modal" data-target="#exampleModal">
+                  <a href="{% url 'app_45:register' %}" style="color:white;
+                  ">Sign Up</a>
+                </button> &nbsp;
+                
+                <!-- Modal -->
+                <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+                  <div class="modal-dialog" role="document" >
+                    <div class="modal-content" style="background-image:radial-gradient(skyblue,white);">
+                      <div class="modal-header" >
+                        <h5 class="modal-title" id="exampleModalLabel" style="color: blue; "> New Register</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div> -->
+                      <!-- <div class="modal-body">
+                        <form>
+                        First Name: 
+                         <input type="text"   name="firstname"class="search-2 ml-1 mb-3" >
+                        <br> Last Name: 
+                          <input type="text"   name ="lastname"class="search-2 ml-2 mb-3" ><br>
+                         Email: 
+                         <input type="email"  class="search-2 ml-5 mb-3"><br>
+                         Password
+                          <input type="password"  class="search-2 ml-5 mb-3">
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary botn" data-dismiss="modal">Close</button>
+                        <a href="L_PAGE_2.html"><button type="button" class="btn btn-primary botn" onclick="display('page-4,html')"> Register</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div> </a>
+            </li> -->
+            <li class="nav-item">
+              <a  href="#"> <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary botn" data-toggle="modal" data-target="#exampleModalCenter">
+                  <a href="{% url 'app_45:login' %}" style="color:white">Log In</a>
+                </button>
+                
+                <!-- Modal -->
+                <!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content " style="background-image:radial-gradient(skyblue,white);" >
+                      <div class="modal-header" >
+                        <h5 class="modal-title" id="exampleModalCenterTitle" style="color: blue;">Log in</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <label for="" class="text mb-3"> Username :</label><input type="text" class="search-2 mb-3 "><br>
+                        <label for="" class="text mb-3"> Password :</label> <input type="password" class="search-2 mb-3">
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary botn" data-dismiss="modal">Close</button>
+                      <a href="L_PAGE_2.html"><button type="button" class="btn btn-primary botn" onclick="display('page-4,html')">Proceed</button></a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div></a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+        <div class="container">
+            <div class="row">
+                <div class="container p-3">
+                    <marquee behavior="" direction="left"><h6 style="color:white;"> Learn python at "LEVELUP" ,("100% Placement")</h6> </marquee>
+                    <div class="col-12 ">  <br> <br>
+                                      
+                   <h1 class="h1 " style="margin-top:00px;color:white;margin-left: 80px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-weight: bolder;"> Learn</h1>
+                   <br>
+                   <h1 class="h1 ml-5" style="margin-top:0px; color:orange;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-weight: bolder;"> &nbsp; &nbsp; &nbsp; Python  </h1>
+                    <div class="" >
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/xyz.jpg.png' %}" class="logo-1 ml-5" style="margin-left:100px;height:40px;width:100px;margin-top:130px;border:0px; border-radius:10px;"/> <br> <br><br>
+                    <h4  style="color:orange ;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;  &nbsp;  &nbsp; Become a <font style="color:red"></font><span id='change_content' style="color:red"></span></h4>
+                      
+                </div>
+                    
+                
+                
+  
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+  
+  <br><br><br><br>
+   
+   <div class="about" width="100vw"   style="background-color:bisque;">
+    <h3 style="text-align: center;">Levelup makes learning Python fun and flexible</h3>
+    <h5 style="text-align: center;">Enjoy guided roadmaps, develop real-world projects, and earn certificates of completion along the way.</h5>
+
+
+   
+   <br><br>
+  
+<div class="row ml-1">
+  <div class="col-3" ><i class="fa-sharp fa-solid fa-person" style="color: blue;margin-left: 100px;font-size:xx-large;"></i><br> <br> Step-by-step guidance
+
+    Know what to learn and when. You'll have assistance every step of the way.</div>
+  <div class="col-3"><i class="fa-solid fa-hands-bound" style="color: blue;margin-left: 100px;font-size:xx-large;" ></i> <br> <br>
+    Hands-on experience
+
+    Build up a portfolio of work to showcase.</div>
+  <div class="col-3"><i class="fa-solid fa-id-card" style="color: blue;margin-left: 100px;font-size:xx-large;"></i> <br> <br> Better knowledge retention
+
+    Keep what you learn, and begin applying it.</div>
+  <div class="col-3"><i class="fa-solid fa-circle-check" style="color: blue;margin-left: 100px;font-size:xx-large;"></i> <br> <br> Proof of progress
+
+    Map your success with certificates of completion.</div>
+</div>
+</div>
+{% endblock %}
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+{% load static %}
+{% block content %}
+<html lang="en" dir="ltr"> 
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/innerpage.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>Innerpage</title>
+    <!-- <nav class="navbar navbar-expand-sm sticky-top navbar-light bg-light">
+        <a class="navbar-brand" href="project.html"><img src="{% static 'images/python.jpeg' %}"  class="image-1"/> <span class="py">Python </span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <marquee behavior="" direction="" loop="" scrollamount="10"> WELCOME TO PYTHON </marquee>
+      </nav> -->
+    
+    <!-- <div class="container-fluid" >
+      <div class="row" style="background-color:black;">
+        <div class="col-sm-12" style="font-family:'Comic Sans MS'; font-size: 50px; color:white; letter-spacing: 3px;">
+          <center><b>Level</b>Up</center>
+        </div>
+      </div>
+    </div> -->
+    <div class="container-fluid bg-orange" >
+      <div class="row">
+        <div class="col-sm-12 ml-5 mr-5 mt-5 mb-5">
+
+          <form action="/innerpage/" method="post">
+            {% csrf_token %}
+            <div class="form-group row">
+              <div class="col-sm-7 mr-5 ml-3">
+                <label for="comment1"><h4>Coding Area</h4></label>
+                <textarea class="form-control" id="comment1" rows="14" name="code_area" style="border:1px solid rgb(34, 4, 4); letter-spacing: 1px; font-family: 'Lucida Console'; font-size: 20px;background-color: black;color: white; " onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}">{{code}}</textarea>
+              </div>
+
+              <div class="col-sm-3">
+                <div class="row mb-4">
+                  <label for="comment2"><h5>Input</h5></label>
+                  <textarea class="form-control" id="comment2" rows="7" name="input_area" style="border:1px solid grey;background-color: black;color: white;">{{input}}</textarea>
+                </div>
+                <div class="row">
+                  <label for="comment3"><h5>Output</h5></label>
+                  <textarea class="form-control" id="comment3" rows="7" name="output_area" style="border:1px solid grey;background-color: black;color: white;" disabled>{{output}}</textarea>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-7 ml-3">
+                <button  class="btn btn-outline-success float-right" type="submit">Run Your Code</button>
+                <!--<button class="desktop-clear-button">
+                  &nbsp;Clear&nbsp;
+              </button>-->
+
+
+
+                <!--<button type="submit" onClick="clearForm()">
+   Clear
+</button>-->
+                <!--<button type="button" onclick="submitForm1()" class="btn btn-success w-100 submit">Send Message</button>-->
+    <input type="button" value="Reset" onclick="javascript:eraseText();">
+                
+            </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <script>
+  function eraseText() {
+    document.getElementById("comment1").value = "";
+    document.getElementById("comment2").value = "";
+    document.getElementById("comment3").value = "";
+}
+  </script>
+{% endblock %}

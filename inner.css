@@ -1,0 +1,228 @@
+.bg{
+    
+    height:100vh;
+    width:100vw;
+    background-size:cover;
+    background-position: 10px;
+    background-repeat:no-repeat;
+    background-attachment: scroll;
+    padding:0px;
+}
+.bg2{
+    background-color:#8e918f;
+    padding:34px;
+    border-radius:1px;
+    
+
+    
+}
+.logo-1{
+    height:40px;
+    width:120px;
+    margin-left:200px;
+
+
+}
+.h1{
+    font-style:italic;
+    font-weight:bold;
+    color:#fdfdfa;
+    font-size:90px;
+    font-weight:bold;
+    margin-top:100px;
+    margin: left 55px;
+    /* shadow: #fcc649; */
+    display:inline;
+
+
+
+
+}
+
+.botn{
+    height:30px;
+    width:75px;
+    background-color:#3773a5 ;
+    font-family:"Roboto";
+    font-size:13px;
+
+}
+
+button-1{
+    background-color:transparent;
+    border-style:solid;
+    border-width:1px;
+    border-color:#fffefd;
+    color:#fdfdfa;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight:bold;
+    font-style: italic;
+    height:90px;
+    width:280px;
+    border-radius:40px;
+    
+    font-size:38px;
+    cursor: pointer;
+
+ }
+ .button-2{
+    background-color:transparent;
+    border-style:solid;
+    border-width:1px;
+    border-color:#fffefd;
+    color:#fdfdfa;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight:bold;
+    font-style: italic;
+    height:90px;
+    width:280px;
+    border-radius:40px;
+    
+    font-size:38px;
+    cursor: pointer;
+    margin:6px;
+ }
+
+a{
+    color:rgb(248, 246, 246);
+    font-style: italic;
+    font-size:55px;
+    text-decoration: none;
+    margin:2px;
+    
+    
+}
+.image{
+
+    border-radius:58px;
+    height:124px;
+    width:124px;
+}
+button-1:hover{
+    background-color: lightpink;
+    color:blue;
+}
+.button-2:hover{
+    background-color:#42BFF5;
+
+
+}
+.botn:hover{
+    background-color:lightpink ;
+    color: blue;
+}
+    .botn.active{
+        background-color:#42BFF5;
+    }
+    .botn.visited{
+        background-color:pink;
+    }
+    
+
+    #q{
+    margin-top: 1600px;
+
+
+
+}
+.nav-1{
+    background-color: radial-gradient(rgb(247, 245, 245),rgb(110, 195, 238),rgb(7, 109, 182));
+    padding-top:0px;
+
+}
+.bg-4{
+    background-image: radial-gradient(rgb(247, 245, 245),rgb(110, 195, 238),rgb(7, 109, 182));
+    padding-top:0px;
+
+}
+.search{
+    width:500px;
+    height:380px;
+    margin-bottom:16px;
+   
+    border-radius:10px;
+    border-color:rgb(161, 156, 156);
+    border-width:1px;
+}
+.search-1{
+    width:290px;
+    height:220px;
+    border-color:rgb(161, 156, 156);
+    border-width:1px;
+    border-radius:10px;
+   
+}
+.card{
+    background-color:white;
+    padding:15px;
+    
+    margin-top:27px;
+    border-radius:10px;
+    
+}
+.image-1{
+    height:50px;
+    width:95px;
+    border-radius:45px;
+}
+
+.image-2{
+    height:40px;
+    width:90px;
+    
+}
+.py{
+    color:#3773a5;
+    font-size:22px;
+    font-weight:bold;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.th{
+    color:#ffdb4c;
+    font-size:22px;
+    font-weight:bold;
+    font-family:Arial, Helvetica, sans-serif;
+
+
+}
+.video{
+    border-radius:10px;
+}
+.search-2{
+    height:30px;
+    width:240px;
+
+}
+.modal-body{
+    font-size: medium;
+    color: blue;
+}
+.text{
+    font-size:13px;
+}
+.text-2{
+    font-size:16px;
+    font-weight:bold;
+}
+
+
+#change_content::after{
+    content:"";
+    animation:changetext 5s infinite linear ;
+    
+    
+}
+@keyframes changetext
+{
+    0%{content:"Data Analyst"}
+    20%{content:"Software Developer"}
+    40%{content:"Devops Engineer"}
+    60%{content:"Data Scientist"}
+    80%{content:"Machine Learning"}
+    100%{content:"Software Developer"}
+}
+i{
+    font-size:xx-large;
+    color: blue;
+    margin-left: 90px;
+}
